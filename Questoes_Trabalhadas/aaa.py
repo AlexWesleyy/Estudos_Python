@@ -1,13 +1,11 @@
-while b != 0 or a != 0:
-    a, b = input().split()
-    a = int(a)
-    b = int(b)
-    if b > a:
-        for a in range(a, b+1):
-            soma = soma+a
-            print(soma)
-            soma = 0
-    if b < a:
-        for b in range(b, a+1):
-            soma = soma+b
-            print(soma)
+x,y = list(map(int,input().split())) 
+count = 0
+for i in range(1,y+1): 
+    if count == x-1: 
+        print(i) 
+        count = count+1 
+    else: 
+        print(i,end=" ") 
+        count = count+1 
+    if count==x: 
+        count=0
