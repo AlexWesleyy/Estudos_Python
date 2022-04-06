@@ -1,12 +1,13 @@
-
 x, y = input().split()
 x = int(x)
 y = int(y)
-cont=0
+count = 0
 for i in range(1, y+1):
-    print(f"{i} ",end="")
-    cont += 1
-    if cont == x:
-        print()
-        cont = 0
-           
+    if count == x-1:
+        print(i)
+        count = count+1
+    else:
+        print(i, end=" ")
+        count = count+1
+    if count == x:
+        count = 0
