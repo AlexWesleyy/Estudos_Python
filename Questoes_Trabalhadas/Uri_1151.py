@@ -2,6 +2,14 @@ n = int(input())
 a = 0
 b = 1
 soma = 0
-for i in range(1, n):
-    soma = n+i
-    print(soma)
+
+print(a, end=' ')
+print(b, end=' ')
+for i in range(0, n-2):
+    soma = a+b
+    a=b
+    b=soma
+    if i==n-3:
+         print(soma)
+    if i<n-3:
+        print(soma, end=' ')
