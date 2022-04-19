@@ -1,5 +1,7 @@
-s=1+(3/2)+(5/4)+(7/8)
-for i in range(9,40,2):
-    j=i+1
-    s=s+(i/j)
+s = 1
+b = 1
+for i in range(3, 40, 2):
+    a = i
+    b = b*2
+    s = s+(a/b)
 print('{:.2f}'.format(s))
